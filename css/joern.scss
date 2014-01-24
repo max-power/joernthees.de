@@ -1,0 +1,28 @@
+$text_color: #252525;
+$light_text_color: #c0c0c0;
+$medium_text_color: #999;
+$background_color: #fff;
+$highlight_color: red;
+$page_max_width: 720px;
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@import "reset";
+@import "base";
+@import "fonts";
+@import "header";
+@import "footer";
+@import "languages";
+@import "works";
+@import "contact";
+@import "pages";
+@import "overlay";
+@import "error_page";

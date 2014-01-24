@@ -1,0 +1,22 @@
+.header {
+  margin:4rem 0;
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    @include font-size(60px);
+  	color:$highlight_color;
+  }
+  
+  h2 {
+    @include font-size(20px);
+  	color:$medium_text_color;
+    margin-top:2rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .header {
+    h1 { @include font-size(50px); }
+    h2 { @include font-size(18px); }
+  }
+}

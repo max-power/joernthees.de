@@ -1,0 +1,23 @@
+.languages {
+  text-align:center;
+  list-style:none;
+  margin:2rem 0;
+  -webkit-tap-highlight-color: transparent;
+  
+  a {
+    display:inline-block;
+    padding: 1rem 1.5rem;
+    color: $light_text_color;
+    text-decoration:none;
+    cursor:pointer;
+    
+    &.on    { color: $highlight_color; }
+    &:hover { color: $text_color; }
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .languages a {
+    padding:1rem 0.75rem;
+  }
+}

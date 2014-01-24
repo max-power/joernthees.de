@@ -1,0 +1,24 @@
+.error {
+  
+  p, header {
+    text-align:center;
+  }
+  
+  header {
+    margin-bottom:4rem;
+    
+    h1 {
+      @include font-size(150px);
+      color: $highlight_color;
+    }
+
+    h2 {
+      color: $medium_text_color;
+      margin-top:1rem;      
+    }
+  }
+  
+}
+
+
+

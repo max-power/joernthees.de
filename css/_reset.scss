@@ -1,0 +1,22 @@
+body, figure, ul, li, dl, dt, dd, header h1, header h2 {
+  margin:0;
+  padding:0;
+}
+
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+}
+
+::selection {
+	background: $highlight_color;
+  color: $background_color;
+  text-shadow:none;
+}
+
+::-moz-selection {
+	background: $highlight_color;
+  color: $background_color;
+  text-shadow:none;
+}
