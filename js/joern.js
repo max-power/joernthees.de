@@ -62,7 +62,8 @@ var TV = function(el) {
   
   this.createButtons()
   
-  this.goto(0)
+  this.index = 0
+  this.transition(true)
   this.play()
 }
 
