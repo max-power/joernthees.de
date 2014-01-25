@@ -9,12 +9,11 @@
   h2 {
     margin-top:4rem;
   }
-  
-  &#impressum p {
-    font-size:0.9375rem
-  }
 }
 
+.smallprint p {
+    font-size:0.9375rem;
+}
 
 @media only screen and (min-width: 36em) {
   #impressum [itemtype="http://schema.org/Person"] {

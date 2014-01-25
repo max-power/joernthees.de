@@ -24,7 +24,7 @@
         </p>
       </div>
       
-      <?php echo $page->body ?>
+      <div class="smallprint"><?php echo $page->body ?></div>
       
     </div>
   </section>
