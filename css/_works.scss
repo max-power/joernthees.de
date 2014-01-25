@@ -1,6 +1,10 @@
 .works {
   margin-top:10%;
   
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+  
   .wrap {
     position:relative;
   }
@@ -154,9 +158,9 @@
   &.playing {
     .tube {
       opacity: 0.92;
-      -webkit-animation: tv_quality 5s infinite;
-      -moz-animation: tv_quality 5s infinite;
-      animation: tv_quality 5s infinite;
+      -webkit-animation: tv_quality 8s infinite;
+      -moz-animation: tv_quality 8s infinite;
+      animation: tv_quality 8s infinite;
     }
     .work {
       img {
@@ -190,24 +194,30 @@
   20%  {opacity: 0.81;}
   50%  {opacity: 0.96;}
   60%  {opacity: 0.65;}
-  90%  {opacity: 0.92;}
-  100% {opacity: 0.86;}
+  62%  {opacity: 0.85;}
+  66%  {opacity: 0.70;}
+  90%  {opacity: 0.90;}
+  100% {opacity: 0.82;}
 }
 @-moz-keyframes tv_quality {
   0%   {opacity: 0.92;}
   20%  {opacity: 0.81;}
   50%  {opacity: 0.96;}
   60%  {opacity: 0.65;}
-  90%  {opacity: 0.92;}
-  100% {opacity: 0.86;}
+  62%  {opacity: 0.85;}
+  66%  {opacity: 0.70;}
+  90%  {opacity: 0.90;}
+  100% {opacity: 0.82;}
 }
 @keyframes tv_quality {
   0%   {opacity: 0.92;}
   20%  {opacity: 0.81;}
   50%  {opacity: 0.96;}
   60%  {opacity: 0.65;}
-  90%  {opacity: 0.92;}
-  100% {opacity: 0.86;}
+  62%  {opacity: 0.85;}
+  66%  {opacity: 0.70;}
+  90%  {opacity: 0.90;}
+  100% {opacity: 0.82;}
 }
 
 .tv-bullets {
