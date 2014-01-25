@@ -56,7 +56,7 @@ var TV = function(el) {
   this.channels = this.el.querySelectorAll('.work')
   for (i=0;i<this.channels.length;i++) this.channels.item(i).classList.add('hidden')
   
-  this.el.addEventListener('mouseover', this.stopPlaying.bind(this), false)
+  this.el.addEventListener('mouseover',  this.stopPlaying.bind(this), false)
   this.el.addEventListener('mouseenter', this.stopPlaying.bind(this), false)
   this.el.addEventListener('mouseleave', this.startPlaying.bind(this), false)
   
@@ -90,12 +90,14 @@ TV.prototype.channel = function(index) {
 }
 
 TV.prototype.play = function() {
+  this.el.classList.add('playing')
   this.wasPlaying = false
   this.timer = setInterval(this.next.bind(this), 700)
   return this
 }
 
 TV.prototype.stop = function() {
+  this.el.classList.remove('playing')
   this.timer && clearInterval(this.timer)
   this.timer = undefined
   return this
