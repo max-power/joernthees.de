@@ -68,7 +68,7 @@ var TV = function(el) {
 }
 
 TV.prototype.goto = function(i){
-  return this.transition(false).setIndex(i).transition(true)
+  return this.transition(false).setIndex(parseInt(i,10)).transition(true)
 }
 TV.prototype.next = function() { return this.goto(this.index + 1) }
 TV.prototype.prev = function() { return this.goto(this.index - 1) }
