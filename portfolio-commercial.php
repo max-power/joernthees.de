@@ -30,13 +30,4 @@
 
     </div></div>
   </div>
-    
-
-    <!--
-    <?php if ($page->vimeo_id): ?>
-    <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-      <iframe  src="//player.vimeo.com/video/<?php echo $page->vimeo_id ?>?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=fdd309" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <?php endif ?>
-    -->
 </article>

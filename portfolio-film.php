@@ -9,7 +9,6 @@
         <a class="button play" href="http://vimeo.com/<?php echo $page->vimeo_id ?>" data-vimeo-id="<?php echo $page->vimeo_id ?>"><b>Watch</b></a>
       <?php endif; ?>      
       
-      
       <ul>
         
         <li itemprop="director" itemscope itemtype="http://schema.org/Person">
@@ -30,7 +29,6 @@
         </li>
 
       </ul>
-      
       
     </div></div>
   </div>

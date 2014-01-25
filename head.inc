@@ -15,8 +15,6 @@
   <link rel="icon" type="image/png" href="<?php echo $config->urls->templates?>images/favicon-32.png">
   
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,500|Pacifico' rel='stylesheet' type='text/css'>
-  <!--link href='http://fonts.googleapis.com/css?family=Mr+Bedfort|Montez|Engagement||Mrs+Sheppards' rel='stylesheet' type='text/css'-->
-  
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>css/joern.css" />
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
   <?php if ($homepage->color): ?>

@@ -1,4 +1,5 @@
 <?php $homepage = $pages->get('/') ?>
+
 <section class="works" id="<?php echo $page->name; ?>">
   <div class="wrap">
     <header class="joern" style="background-image:url(<?php echo $homepage->joern_head->first->url; ?>)"></header>
