@@ -58,9 +58,9 @@ var TV = function(el) {
   this.channels = this.el.querySelectorAll('.work')
   for (i=0;i<this.channels.length;i++) this.channels.item(i).classList.add('hidden')
   
-  this.el.addEventListener('mouseover',  this.stopPlaying.bind(this), false)
-  this.el.addEventListener('mouseenter', this.stopPlaying.bind(this), false)
-  this.el.addEventListener('mouseleave', this.startPlaying.bind(this), false)
+  this.el.addEventListener('mouseover',  this.stop.bind(this), false)
+  this.el.addEventListener('mouseenter', this.stop.bind(this), false)
+  this.el.addEventListener('mouseleave', this.play.bind(this), false)
   
   this.createButtons()
   
@@ -73,6 +73,19 @@ TV.prototype.goto = function(i){
 }
 TV.prototype.next = function() { return this.goto(this.index + 1) }
 TV.prototype.prev = function() { return this.goto(this.index - 1) }
+
+
+TV.prototype.play = function() {
+  this.el.classList.add('playing')
+  this.timer = setInterval(this.next.bind(this), 700)
+  return this
+}
+
+TV.prototype.stop = function() {
+  this.el.classList.remove('playing')
+  this.timer && clearInterval(this.timer)
+  return this
+}
 
 TV.prototype.setIndex = function(num){
   var max = this.channels.length - 1
@@ -88,34 +101,6 @@ TV.prototype.transition = function(display) {
 
 TV.prototype.channel = function(index) {
   return this.channels.item(index || this.index)
-}
-
-TV.prototype.play = function() {
-  this.el.classList.add('playing')
-  this.wasPlaying = false
-  this.timer = setInterval(this.next.bind(this), 700)
-  return this
-}
-
-TV.prototype.stop = function() {
-  this.el.classList.remove('playing')
-  this.timer && clearInterval(this.timer)
-  this.timer = undefined
-  return this
-}
-
-
-TV.prototype.stopPlaying = function() {
-  if (this.timer) {
-    this.wasPlaying = true
-    this.stop()
-  }
-}
-
-TV.prototype.startPlaying = function() {
-  if (this.wasPlaying) {
-    this.play()    
-  }
 }
 
 TV.prototype.createButtons = function() {
