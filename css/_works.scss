@@ -68,10 +68,6 @@
     left:0;
     width:100%;
     height:100%;
-    opacity: 1;
-    -webkit-transition:opacity 0.3s ease;
-    -moz-transition:opacity 0.3s ease;
-    transition:opacity 0.3s ease;
 
     .work-info {
       position:absolute;
@@ -82,6 +78,9 @@
       background:rgba(0,0,0,0.4);
       color:#fff;
       text-align:center;
+      -webkit-transition:background 0.2s ease;
+      -moz-transition:background 0.2s ease;
+      transition:background 0.2s ease;
 
       .table {
         opacity:1;
@@ -169,6 +168,8 @@
         transform: scale(1);
       }
       .work-info {
+        background:rgba(0,0,0,0);
+        
         .button.play {
           -webkit-transform: scale(0);
           -moz-transform: scale(0);
