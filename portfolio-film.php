@@ -4,12 +4,14 @@
     <div class="table"><div class="table-cell">
       
       <h1 itemprop="name"><?php echo $page->title; ?></h1>
-      
-      <?php if ($page->vimeo_id): ?>
-        <a class="button play" href="http://vimeo.com/<?php echo $page->vimeo_id ?>" data-vimeo-id="<?php echo $page->vimeo_id ?>"><b>Watch</b></a>
-      <?php endif; ?>      
-      
+            
       <ul>
+        
+        <li class="action">
+          <?php if ($page->vimeo_id): ?>
+            <a class="button play" href="http://vimeo.com/<?php echo $page->vimeo_id ?>" data-vimeo-id="<?php echo $page->vimeo_id ?>"><b>Watch</b></a>
+          <?php endif; ?>
+        </li>
         
         <li itemprop="director" itemscope itemtype="http://schema.org/Person">
           <b>Regie</b>

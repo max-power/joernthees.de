@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
   <?php if ($homepage->color): ?>
   <style type="text/css" media="screen">
-  a, a:hover, .header h1, .languages a.on, .error header h1 { color: #<?php echo $homepage->color ?>; }
+  a, a:hover, .header h1, .languages a.on, .error header h1, .work-info .button.play:hover { color: #<?php echo $homepage->color ?>; }
   hr, .button, .tv-bullets li.on, .works footer.joern { background-color: #<?php echo $homepage->color ?>; }
   ::-moz-selection { background-color: #<?php echo $homepage->color ?>; }
   ::selection { background-color: #<?php echo $homepage->color ?>; }

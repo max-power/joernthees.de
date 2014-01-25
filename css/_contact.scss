@@ -26,19 +26,6 @@
   background:$light_text_color;
 }
 
-.button.play {
-  width:40px;
-  margin:3rem auto 6rem auto;
-  padding:0.35rem 1rem;
-  &:before {
-    content: "\25B6";
-    @include font-size(30px);
-  }
-  b {
-    display:none;
-  }
-}
-
 .iconmelon, .im {
   position: relative;
   width: 32px;
