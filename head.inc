@@ -22,7 +22,9 @@
   <?php if ($homepage->color): ?>
   <style type="text/css" media="screen">
   a, a:hover, .header h1, .languages a.on, .error header h1 { color: #<?php echo $homepage->color ?>; }
-  hr, .button, ::selection, .tv-bullets li.on, .works footer.joern { background-color: #<?php echo $homepage->color ?>; }
+  hr, .button, .tv-bullets li.on, .works footer.joern { background-color: #<?php echo $homepage->color ?>; }
+  ::-moz-selection { background-color: #<?php echo $homepage->color ?>; }
+  ::selection { background-color: #<?php echo $homepage->color ?>; }
   </style>
   <?php endif; ?>
 </head>
