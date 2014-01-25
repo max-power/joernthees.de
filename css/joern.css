@@ -217,9 +217,9 @@ body > footer {
         width: 100%;
         padding: 0.5rem 1rem;
         background: rgba(0, 0, 0, 0.75);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        transform: translateY(0px);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        transform: translateY(0);
         -webkit-transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
         transition: all 0.25s ease;
@@ -236,7 +236,7 @@ body > footer {
         display: block;
         float: left;
         width: 30%;
-        margin-left: 3%; }
+        margin-left: 2%; }
         .tv .work .work-info li b {
           display: block;
           font-weight: 200;
@@ -269,9 +269,9 @@ body > footer {
   .tv.playing .work .work-info .table {
     opacity: 0; }
   .tv.playing .work .work-info ul {
-    -webkit-transform: translateY(70px);
-    -moz-transform: translateY(70px);
-    transform: translateY(70px); }
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%); }
 
 @-webkit-keyframes tv_quality {
   0% {
