@@ -2,11 +2,6 @@ body, figure, ul, li, dl, dt, dd, header h1, header h2 {
   margin: 0;
   padding: 0; }
 
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none; }
-
 ::selection {
   background: red;
   color: white;
@@ -49,11 +44,6 @@ body > footer {
   -moz-hyphens: auto;
   hyphens: auto; }
 
-article {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  user-select: text; }
-
 a {
   text-decoration: none;
   color: red; }
@@ -92,7 +82,10 @@ h2 {
     font-size: 14px;
     font-size: 0.875rem; } }
 .header {
-  margin: 4rem 0; }
+  margin: 4rem 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
   .header h1 {
     font-family: 'Pacifico', cursive;
     font-size: 60px;
@@ -136,6 +129,9 @@ body > footer {
     padding: 1rem 0.75rem; } }
 .works {
   margin-top: 10%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   /* head/feet */
   /*  feet */
   /* hands on tv sides */ }
@@ -259,9 +255,9 @@ body > footer {
       transition: all 0.3s ease; }
   .tv.playing .tube {
     opacity: 0.92;
-    -webkit-animation: tv_quality 5s infinite;
-    -moz-animation: tv_quality 5s infinite;
-    animation: tv_quality 5s infinite; }
+    -webkit-animation: tv_quality 8s infinite;
+    -moz-animation: tv_quality 8s infinite;
+    animation: tv_quality 8s infinite; }
   .tv.playing .work img {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -290,11 +286,17 @@ body > footer {
   60% {
     opacity: 0.65; }
 
+  62% {
+    opacity: 0.85; }
+
+  66% {
+    opacity: 0.70; }
+
   90% {
-    opacity: 0.92; }
+    opacity: 0.90; }
 
   100% {
-    opacity: 0.86; } }
+    opacity: 0.82; } }
 
 @-moz-keyframes tv_quality {
   0% {
@@ -309,11 +311,17 @@ body > footer {
   60% {
     opacity: 0.65; }
 
+  62% {
+    opacity: 0.85; }
+
+  66% {
+    opacity: 0.70; }
+
   90% {
-    opacity: 0.92; }
+    opacity: 0.90; }
 
   100% {
-    opacity: 0.86; } }
+    opacity: 0.82; } }
 
 @keyframes tv_quality {
   0% {
@@ -328,11 +336,17 @@ body > footer {
   60% {
     opacity: 0.65; }
 
+  62% {
+    opacity: 0.85; }
+
+  66% {
+    opacity: 0.70; }
+
   90% {
-    opacity: 0.92; }
+    opacity: 0.90; }
 
   100% {
-    opacity: 0.86; } }
+    opacity: 0.82; } }
 
 .tv-bullets {
   line-height: 1;
@@ -427,6 +441,12 @@ body > footer {
 .page#impressum p {
   font-size: 0.9375rem; }
 
+@media only screen and (min-width: 36em) {
+  #impressum [itemtype="http://schema.org/Person"] {
+    text-align: center; }
+    #impressum [itemtype="http://schema.org/Person"] p {
+      display: inline-block;
+      margin: 0 2em; } }
 #cinema {
   display: table;
   position: fixed;
