@@ -430,7 +430,7 @@ body > footer {
     display: inline-block; }
 
   .button, .fake-button {
-    margin: 0 1rem; } }
+    margin: 1rem; } }
 .page header {
   text-align: center; }
 .page h1 {
@@ -438,7 +438,8 @@ body > footer {
   text-transform: uppercase; }
 .page h2 {
   margin-top: 4rem; }
-.page#impressum p {
+
+.smallprint p {
   font-size: 0.9375rem; }
 
 @media only screen and (min-width: 36em) {
