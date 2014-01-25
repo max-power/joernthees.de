@@ -1,11 +1,11 @@
 .works {
   margin-top:10%;
   
-  & .wrap {
+  .wrap {
     position:relative;
   }
   
-  & .tv {
+  .tv {
     border:10px solid $text_color;
     border-bottom-width:20px;
     border-radius:4px;
@@ -15,8 +15,8 @@
   }
   
   /* head/feet */
-  & header.joern,
-  & footer.joern {
+  header.joern,
+  footer.joern {
   	content:'';
   	display:block;
   	margin:0 auto;
@@ -28,14 +28,14 @@
   }
   
   /*  feet */
-  & footer.joern {
+  footer.joern {
   	background-position: center top;
     margin-bottom:4rem;
   }
   
   /* hands on tv sides */
-  & header.joern:after,
-  & header.joern:before {
+  header.joern:after,
+  header.joern:before {
     content:'';
     position:absolute;
     z-index:100;
@@ -45,7 +45,7 @@
     height:40px;
     background:#EEDBD9;
   }
-  & header.joern:after {
+  header.joern:after {
     left:auto;
     right:-10px;
     top:33%;
