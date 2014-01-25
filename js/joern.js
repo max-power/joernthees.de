@@ -1,4 +1,5 @@
 var TranslationTabs = function(parent_element) {
+  if (!parent_element) return;
   this.el = parent_element
   this.translations = {}
   this.navigations  = {}
@@ -52,6 +53,7 @@ TranslationTabs.prototype.createElement = function(tag_name, options){
 
 
 var TV = function(el) {
+  if (!el) return;
   this.el = el
   this.channels = this.el.querySelectorAll('.work')
   for (i=0;i<this.channels.length;i++) this.channels.item(i).classList.add('hidden')
@@ -63,8 +65,7 @@ var TV = function(el) {
   this.createButtons()
   
   this.index = 0
-  this.transition(true)
-  this.play()
+  this.preload()
 }
 
 TV.prototype.goto = function(i){
@@ -134,6 +135,19 @@ TV.prototype.changeChannel = function(e) {
   if(t && t.nodeName == "LI" && t.hasAttribute('data-item')) {
     this.goto(t.getAttribute('data-item'))
   }
+}
+
+TV.prototype.preload = function(src) {
+  this.preload_counter = 0
+  for (i=0;i<this.channels.length;i++) {
+    var img  = new Image()
+    img.onload = this.playWhenReady.bind(this)
+    img.src    = this.channels.item(i).querySelector('img').getAttribute('src')    
+  }
+}
+
+TV.prototype.playWhenReady = function() {
+  if (++this.preload_counter == this.channels.length) this.goto(0).play()
 }
 
 
