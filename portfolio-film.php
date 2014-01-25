@@ -9,7 +9,7 @@
         
         <li class="action">
           <?php if ($page->vimeo_id): ?>
-            <a class="button play" href="http://vimeo.com/<?php echo $page->vimeo_id ?>" data-vimeo-id="<?php echo $page->vimeo_id ?>"><b>Watch</b></a>
+            <a class="button play" href="http://vimeo.com/<?php echo $page->vimeo_id ?>" data-vimeo-id="<?php echo $page->vimeo_id ?>">&#9654;</a>
           <?php endif; ?>
         </li>
         
