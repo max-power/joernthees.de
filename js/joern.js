@@ -77,7 +77,7 @@ TV.prototype.prev = function() { return this.goto(this.index - 1) }
 
 TV.prototype.play = function() {
   this.el.classList.add('playing')
-  this.timer = setInterval(this.next.bind(this), 700)
+  this.timer = setInterval(this.next.bind(this), 1000)
   return this
 }
 
