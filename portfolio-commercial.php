@@ -2,9 +2,10 @@
   <figure><img src="<?php echo $page->poster_image->size(720, 405, $options)->url ?>"></figure>
   <div class="work-info">
     <div class="table"><div class="table-cell">
-      
+
+      <p class="what">Commercial</p>
       <h1 itemprop="name"><?php echo $page->title; ?></h1>
-      
+
       <ul>
         
         <li class="action">

@@ -3,6 +3,7 @@
   <div class="work-info">
     <div class="table"><div class="table-cell">
       
+      <p class="what">Film</p>
       <h1 itemprop="name"><?php echo $page->title; ?></h1>
             
       <ul>
