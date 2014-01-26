@@ -75,7 +75,7 @@
 
 <footer>
     <div class="wrap">
-        <small><a href="/impressum">Impressum</a></small>
+        <small><a href="/impressum/">Impressum</a></small>
     </div>
 </footer>
   
