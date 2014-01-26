@@ -19,7 +19,7 @@
   <script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
 
   <?php 
-	$c = (isset($_GET['c']) && (strlen($_GET['c'])==6 || strlen($_GET['c'])==3)) ? $_GET['c'] : $homepage->color;
+	$c = (isset($_GET['c']) && preg_match('/^([A-F0-9]{3}){1,2}$/i', $_GET['c'])) ? $_GET['c'] : $homepage->color;
   ?>
   <style type="text/css" media="screen">
   a, a:hover, .header h1, .languages a.on, .error header h1, .work-info .button.play:hover { color: #<?php echo $c ?>; }
