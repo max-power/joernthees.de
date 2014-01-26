@@ -9,14 +9,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileColor" content="#02F0A0">
   <meta name="msapplication-TileImage" content="<?php echo $config->urls->templates?>images/favicon-144.png">
   <link rel="apple-touch-icon-precomposed" href="<?php echo $config->urls->templates?>images/favicon-152.png">
   <link rel="icon" type="image/png" href="<?php echo $config->urls->templates?>images/favicon-32.png">
   
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,500|Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>css/joern.css" />
-	<script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
+  <script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
   <?php if ($homepage->color): ?>
   <style type="text/css" media="screen">
   a, a:hover, .header h1, .languages a.on, .error header h1, .work-info .button.play:hover { color: #<?php echo $homepage->color ?>; }
