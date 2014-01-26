@@ -17,16 +17,18 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,500|Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>css/joern.css" />
   <script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
-  <?php if ($homepage->color): ?>
+
+  <?php 
+	$c = (isset($_GET['c']) && (strlen($_GET['c'])==6 || strlen($_GET['c'])==3)) ? $_GET['c'] : $homepage->color;
+  ?>
   <style type="text/css" media="screen">
-  a, a:hover, .header h1, .languages a.on, .error header h1, .work-info .button.play:hover { color: #<?php echo $homepage->color ?>; }
-  hr, .button, .tv-bullets li.on, .works footer.joern { background-color: #<?php echo $homepage->color ?>; }
-  ::-moz-selection { background-color: #<?php echo $homepage->color ?>; }
-  ::selection { background-color: #<?php echo $homepage->color ?>; }
+  a, a:hover, .header h1, .languages a.on, .error header h1, .work-info .button.play:hover { color: #<?php echo $c ?>; }
+  hr, .button, .tv-bullets li.on, .works footer.joern { background-color: #<?php echo $c ?>; }
+  ::-moz-selection { background-color: #<?php echo $c ?>; }
+  ::selection { background-color: #<?php echo $c ?>; }
   </style>
-  <?php endif; ?>
 </head>
-<body data-color="<?php echo $homepage->color ?>">
+<body data-color="<?php echo $c ?>">
   
   <header class="header" itemscope itemtype="http://schema.org/Person">
     <div class="wrap">
