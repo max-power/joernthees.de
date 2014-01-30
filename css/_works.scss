@@ -34,16 +34,21 @@
     content:'';
     position:absolute;
     z-index:100;
-    top:53%;
-    left:-10px;
-    width:20px;
-    height:40px;
-    background:#EEDBD9;
+    top:49%;
+    left:-2.8%;
+    width:10%;
+    height:100%;
+    background-image:url(../images/joern-hand-rechts.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size:100%;
   }
   header.joern:after {
     left:auto;
-    right:-10px;
-    top:33%;
+    right:-2.4%;
+    top:44%;
+    background-image:url(../images/joern-hand-links.png);
+    background-position: top right;
   }
 }
 
