@@ -23,7 +23,7 @@
   ?>
   <style type="text/css" media="screen">
   a, a:hover, .header h1, .languages a.on, .error header h1, .work-info .button.play:hover { color: #<?php echo $c ?>; }
-  hr, .button, .tv-bullets li.on, #joern { background-color: #<?php echo $c ?>; }
+  hr, .button, .tv-bullets li.on, .works footer.joern { background-color: #<?php echo $c ?>; }
   ::-moz-selection { background-color: #<?php echo $c ?>; }
   ::selection { background-color: #<?php echo $c ?>; }
   </style>
