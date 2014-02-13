@@ -16,6 +16,7 @@
   
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,500|Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>css/joern.css" />
+  <script src="//polyfill.io"></script>
   <script type="text/javascript" src="<?php echo $config->urls->templates?>js/joern.js"></script>
 
   <?php 
